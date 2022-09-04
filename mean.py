@@ -34,24 +34,12 @@ def get_mode(sorted_data):
     for weight, occurence in data.items():
         if 75 < weight < 85:
             mode_data_for_range["75-85"] += occurence
-        elif 85 < weight < 95:
-            mode_data_for_range["85-95"] += occurence
+      
         elif 95 < weight < 105:
             mode_data_for_range["95-105"] += occurence
         elif 105 < weight < 115:
             mode_data_for_range["105-115"] += occurence
-        elif 115 < weight < 125:
-            mode_data_for_range["115-125"] += occurence
-        elif 125 < weight < 135:
-            mode_data_for_range["125-135"] += occurence
-        elif 135 < weight < 145:
-            mode_data_for_range["135-145"] += occurence
-        elif 145 < weight < 155:
-            mode_data_for_range["145-155"] += occurence
-        elif 155 < weight < 165:
-            mode_data_for_range["155-165"] += occurence
-        elif 165 < weight < 175:
-            mode_data_for_range["165-175"] += occurence
+     
     mode_range, mode_occurence = 0, 0
     for range, occurence in mode_data_for_range.items():
         if occurence > mode_occurence:
